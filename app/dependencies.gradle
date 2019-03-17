@@ -1,0 +1,45 @@
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha03'
+    //Lifecycle components
+    implementation "android.arch.lifecycle:extensions:$lifecycleVersion"
+    //Rx-Java
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    //Dagger2
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
+    //Gson
+    implementation "com.google.code.gson:gson:$gsonVersion"
+    //Room
+    implementation "androidx.room:room-runtime:$roomVersion"
+    annotationProcessor "androidx.room:room-compiler:$roomVersion"
+    implementation "androidx.room:room-ktx:$roomVersion"
+    implementation "androidx.room:room-rxjava2:$roomVersion"
+    implementation "androidx.room:room-guava:$roomVersion"
+    //Recycler View
+    implementation "com.android.support:recyclerview-v7:$recyclerViewVersion"
+    //Card View
+    implementation "com.android.support:cardview-v7:$recyclerViewVersion"
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideCompilerVersion"
+    //Log
+    implementation "com.jakewharton.timber:timber:$timberVersion"
+    //Crashlytics
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+        transitive = true;
+    }
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+    androidTestImplementation "androidx.test:runner:$testRunnerVersion"
+    androidTestImplementation "androidx.test:rules:$testRunnerVersion"
+
+    testImplementation "junit:junit:$junitVersion"
+    testImplementation "android.arch.core:core-testing:$lifecycleVersion"
+    testImplementation "androidx.room:room-testing:$roomVersion"
+    testImplementation "org.mockito:mockito-core:$mockitoVersion"
+}
