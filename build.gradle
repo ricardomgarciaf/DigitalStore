@@ -23,7 +23,7 @@ allprojects {
 }
 
 ext{
-    minSdkVersion = 21
+    minSdkVersion = 26
     targetSdkVersion = 28
     compileSdkVersion = 28
     roomVersion = "2.1.0-alpha05"
@@ -41,6 +41,8 @@ ext{
     testRunnerVersion="1.1.1"
     gsonVersion="2.8.5"
     mockitoVersion="2.8.47"
+    spinKitVersion="1.2.0"
+    okhttpVersion="3.11.0"
 }
 
 task clean(type: Delete) {
